@@ -9,7 +9,7 @@ var login = new LoginPage();
 var homePage = new HomePage();
 var basketPage = new BasketPage();
 
-describe('Regration Tests', function () {
+describe('Regression Tests', function () {
   before(() => {
 
     cy.fixture('credentials').then(function (data) {

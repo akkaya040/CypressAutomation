@@ -7,7 +7,7 @@ The tests were created as automation testing, on every test run some checks and 
 
 # Project Solution
 
-
+![readme](https://user-images.githubusercontent.com/9138241/197036568-9227b8b9-9225-4c6d-8a44-4d4ed6a84579.png)
 
 The E2E folder contains our tests. Before and beforeEach steps work before the test and ensure that the test becomes executable. 
 

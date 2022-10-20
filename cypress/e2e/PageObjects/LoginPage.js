@@ -5,6 +5,7 @@ class LoginPage {
     navigate(url) {
         cy.visit(url);
         cy.wait(1000);
+
     }
 
 
@@ -14,7 +15,7 @@ class LoginPage {
             .type(username)
             .should("have.value", username);
 
-        return this
+        return this;
     }
 
     enterPassword(password) {
@@ -23,15 +24,21 @@ class LoginPage {
             .type(password)
             .should("have.value", password);
 
-        return this
+        return this;
     }
 
     submit() {
+
         cy.get('[id=login-button]').click()
+
+        return this;
     }
 
     controlWrongErrorMessageIsExist() {
-        cy.get('[data-test=error]').should('contain.text','Username and password do not match any user in this service')
+
+        cy.get('[data-test=error]').should('contain.text', 'Username and password do not match any user in this service')
+
+        return this;
     }
 
 
